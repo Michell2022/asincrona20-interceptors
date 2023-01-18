@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { BreakingComponent } from './breaking/breaking.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 
@@ -11,7 +12,9 @@ import { BreakingComponent } from './breaking/breaking.component';
     BreakingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink,
+    RouterLinkActive
   ],
   exports: [
     HomeComponent
